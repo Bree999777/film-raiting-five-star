@@ -1,0 +1,55 @@
+ body {
+        
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+        border:none;
+		    }
+    
+    h1{
+        font-size: 5em;
+color: red;
+    }
+
+    
+    .img {
+        width:200px;
+        height: 300px;
+    }
+    
+    .column {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+    .img:hover {
+        opacity: 0.5;
+    }
+    
+    .error {
+        color:red;
+      
+    }    
+    
+    .star{
+        width:5em;
+        height:5em;
+		padding: 2em;
+    }
+    
+
+    
+    .button{
+        display: none;
+    }
+	
+    #movieSelect{
+        display: none;
+		
+    }
