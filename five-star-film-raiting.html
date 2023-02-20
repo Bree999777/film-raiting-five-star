@@ -1,0 +1,91 @@
+# film-raiting-five-star
+
+<!DOCTYPE html>
+
+
+<head>
+<link rel="stylesheet" type="text/css" href="five-star-film-raiting.css">
+<script type="text/javascript" src="five-star-film-raiting.js"></script>
+</head>
+
+
+<body>
+    
+    <h1>Its Time to <br>Vote!</h1>
+	<h3>Vote for your favourite Austin Powers movie below!</h3>
+ <form id="myform" action="https://webdevcit.com/displayvalues.php">
+    <div id="details">
+    <div> Your Name:
+        <input type="text" id="name" name="answer1" value="">
+    </div>
+    <div>Your Email:
+        <input type="email" id="email" name="answer2" value="">
+    </div>
+    <div>Are you a robot?<br> Please type any 6 Digit CODE:
+        <input type="number" id="code" name="answer3" value="" maxlenght="6" minlenght="6">
+    </div>
+     </div>
+
+    
+    <h1>Pick From Below</h1>
+    <div class="row">
+       <div class="column"> 
+           <img  src="austin/1.jpg"  alt="first austin movie" id="first" class="img" onclick="showAnswer(); validateMovie = true;"><p>Austin Powers: International Man of Mystery</p>
+        </div>
+        
+        <div class="column">
+            <img src="austin/2.jpg" alt="second austin movie" id="second" class="img" onclick="showAnswer1() ; validateMovie = true;"><p>Austin Powers: The Spy Who Shagged Me</p>
+        </div>
+        
+        <div class="column">
+            <img src="austin/3.png"   alt="third austin movie" id="third" class="img" onclick="showAnswer2() ; validateMovie = true;"><p>Austin Powers in Goldmember</p>
+        </div>
+        
+        <div class="column">
+            <img src="austin/4.jpg"  alt="fake austin movie" id="fourth" class="img" onclick="showAnswer3() ; validateMovie = true;"><p>Austin Powers: Yet to be Released</p>
+        </div>
+    </div>
+    
+    <h1>Rating</h1>
+
+     <fieldset class="rating">
+         
+         <label>
+             
+     <input type="radio" id="star1" name="rating" value="1" class="button" onclick="document.getElementById('starImg1').src = 'star.png'; document.getElementById('starImg2').src= 'star1.png'; validateRating = true;">
+         <img src="star1.png" id="starImg1" class="star">
+             
+         </label>
+         
+         <label>
+             
+     <input type="radio" id="star2" name="rating" value="2" class="button" onclick="document.getElementById('starImg1').src = 'star.png'; document.getElementById('starImg2').src= 'star.png'; document.getElementById('starImg3').src='star1.png'; document.getElementById('starImg4').src='star1.png'; document.getElementById('starImg5').src='star1.png'; validateRating = true;">
+             <img src="star1.png" id="starImg2" class="star">
+             
+         </label>
+         
+         <label>
+     <input type="radio" id="star3" name="rating" value="3" class="button" onclick="document.getElementById('starImg1').src = 'star.png'; document.getElementById('starImg2').src= 'star.png'; document.getElementById('starImg3').src= 'star.png'; document.getElementById('starImg4').src='star1.png'; document.getElementById('starImg5').src='star1.png'; validateRating = true;">
+             <img src="star1.png" id="starImg3" class="star">
+             </label>
+         
+         <label>
+     <input type="radio" id="star4" name="rating" value="4" class="button" onclick="document.getElementById('starImg1').src = 'star.png'; document.getElementById('starImg2').src= 'star.png'; document.getElementById('starImg3').src= 'star.png'; document.getElementById('starImg4').src='star.png'; document.getElementById('starImg5').src='star1.png'; validateRating = true;">
+             <img src="star1.png" id="starImg4" class="star">
+             </label>
+         
+        <label>
+     <input type="radio" id="star5" name="rating" value="5" class="button" onclick="document.getElementById('starImg1').src = 'star.png'; document.getElementById('starImg2').src= 'star.png'; document.getElementById('starImg3').src= 'star.png'; document.getElementById('starImg4').src='star.png'; document.getElementById('starImg5').src='star.png'; validateRating = true;">
+            <img src="star1.png" id="starImg5" class="star">
+            </label>
+    
+     </fieldset>
+ <p>
+       <input type="submit" id="SubmitButton">
+</p>  
+     <input type="text" id="movieSelect" name="movie">
+     
+     
+</body>
+<footer>
+</footer>
